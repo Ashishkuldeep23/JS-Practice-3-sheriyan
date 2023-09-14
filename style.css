@@ -62,6 +62,9 @@ html , body {
 
 
 .foot{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
     position: absolute;
     bottom: 0;
     left: 50%;
