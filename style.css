@@ -1,10 +1,11 @@
-
-*{
-    padding: 0;margin: 0;box-sizing: border-box;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 
-html , body {
+html, body {
     height: 100vh;
     width: 100%;
     font-size: 16px;
@@ -12,7 +13,7 @@ html , body {
 }
 
 
-.nav{
+.nav {
     height: 5%;
     display: flex;
     justify-content: space-between;
@@ -22,13 +23,13 @@ html , body {
 }
 
 
-#center{
+#center {
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
-  
+    transform: translate(-50%, -50%);
+
 
     /* border: 1px solid; */
 
@@ -42,7 +43,7 @@ html , body {
 
 
 
-#center > h1{
+#center>h1 {
     font-size: 6.5rem;
     text-align: center;
     letter-spacing: .2rem;
@@ -50,7 +51,7 @@ html , body {
 
 
 
-#center > h1:last-child{
+#center>h1:last-child {
     /* background-color: red; */
     font-family: fantasy;
     letter-spacing: .5rem;
@@ -61,7 +62,7 @@ html , body {
 
 
 
-.foot{
+.foot {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -73,8 +74,9 @@ html , body {
 
 
 
-.caretedDiv{
-    height:220px;
+
+.caretedDiv {
+    height: 220px;
     width: 150px;
     /* background-color: red; */
     z-index: 99999;
@@ -85,7 +87,7 @@ html , body {
 }
 
 
-.caretedDiv img{
+.caretedDiv img {
     border-radius: 3%;
     transform: translateY(100%);
     height: 100%;
@@ -96,7 +98,7 @@ html , body {
 
 
 @media (max-width : 1060px) {
-    #center > h1{
+    #center>h1 {
         font-size: 5.5rem;
     }
 }
@@ -105,7 +107,7 @@ html , body {
 
 
 @media (max-width : 781px) {
-    #center > h1{
+    #center>h1 {
         font-size: 4.5rem;
     }
 }
@@ -113,33 +115,47 @@ html , body {
 
 
 @media (max-width : 639px) {
-    #center > h1{
+    #center>h1 {
         font-size: 3.5rem;
     }
+
+
+    .caretedDiv {
+        height: 200px;
+        width: 130px;
+    }
+
 }
 
 @media (max-width : 509px) {
-    #center > h1{
-        font-size: 2.5rem;
+
+    #center {
+        width: 100%;
+    }
+
+    #center>h1 {
+        font-size: 3rem;
+    }
+
+    .caretedDiv {
+        height: 180px;
+        width: 110px;
     }
 }
 
+
+
 @media (max-width : 272px) {
-    .nav{
-      flex-direction: column;  
+    .nav {
+        flex-direction: column;
     }
 
-    .nav:nth-child(1){
+    .nav:nth-child(1) {
         align-self: baseline;
     }
 
-    .nav:nth-child(3){
+    .nav:nth-child(3) {
         align-self: end;
     }
 
 }
-
-
-
-
-
